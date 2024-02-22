@@ -5,20 +5,20 @@ body{
     animation: background-color infinite 10s;
 }
 h1{
-     font-family: FangSong;
+     font-family: 標楷體;
     font-size: 26px;
     color: darkseagreen;
     text-indent: 2em;
     }
 h2{
-    font-family: FangSong;
+    font-family: 標楷體;
     font-size: 36px;
     color: gold;
     background-color: 	#009100;
    
 }
 p{
-    font-family: FangSong;
+    font-family: 標楷體;
     font-size: 26px;
     color: green;
     text-indent: 2em;
