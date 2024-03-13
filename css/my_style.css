@@ -2,13 +2,13 @@
     letter-spacing:0.8px;
     line-height:1.5em;
 }
-p.redred{
+h1{
     color: red;
     font-size: 40px;
     text-align:left;
     text-indent: 2em;
 }
-.blueblue{
+h2{
     color: aquamarine;
 }
 body{
