@@ -1,14 +1,14 @@
-p{
+*{
     letter-spacing:0.8px;
     line-height:1.5em;
 }
-p{
+P.REDRED{
     color: red;
     font-size: 40px;
     text-align:left;
     text-indent: 2em;
 }
-h2{
+ .BLUEBLUE{
     color: aquamarine;
 }
 body{
