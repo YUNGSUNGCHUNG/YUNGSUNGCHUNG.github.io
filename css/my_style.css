@@ -19,10 +19,10 @@ p{
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{ 
     font-family: "Noto Serif TC", serif;
     }
-.education_icon{
+.ec_icon{
     color: forestgreen;
 }
-.education_icon:hover{
+.ec_icon:hover{
     background-color: cornflowerblue;
     color: white;
 }
