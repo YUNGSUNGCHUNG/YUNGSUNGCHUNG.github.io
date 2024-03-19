@@ -29,8 +29,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .mid_icon{
     color: forestgreen;
 }
-.mid_icon{
+.mid_icon:hover{
     background-color: cornflowerblue;
-    color:white；
-    
+    color: white;
+
 }
