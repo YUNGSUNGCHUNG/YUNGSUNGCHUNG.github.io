@@ -26,3 +26,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     background-color: cornflowerblue;
     color: white;
 }
+.sideNav{
+    background-color: black !important;
+ background-image: url(/assets/img/你的名子.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
