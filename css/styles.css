@@ -10870,6 +10870,10 @@ p.lead {
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: black !important;
+  background-image:url(assets/img/你的名字.png);
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
