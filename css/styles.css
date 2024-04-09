@@ -8129,7 +8129,7 @@ textarea.form-control-lg {
 .bg-primary {
   --bs-bg-opacity: 1;
   padding-right: 1rem;
-  background-color: black;
+  background-color: black!important;
   background-image:url(assets/img/你的名字.png);
   background-repeat:no-repeat;
   background-size:cover;
