@@ -8128,7 +8128,11 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  padding-right: 1rem;
+  background-color: black;
+  background-image:url(assets/img/你的名字.png);
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 .bg-secondary {
