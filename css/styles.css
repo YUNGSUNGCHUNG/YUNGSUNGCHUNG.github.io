@@ -8128,9 +8128,8 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  padding-right: 1rem;
   background-color:cadetblue !important;
-  background-image:url(assets\img\你的名字.jpg);
+  background-image:url(../assets/img/你的名字.jpg);
   background-repeat:no-repeat;
   background-size:cover;
 }
