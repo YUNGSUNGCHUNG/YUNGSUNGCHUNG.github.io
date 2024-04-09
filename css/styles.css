@@ -8128,7 +8128,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color:cornflowerblue !important;
 }
 
 .bg-secondary {
@@ -10872,7 +10872,9 @@ p.lead {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
 @media (min-width: 992px) {
   #sideNav {
     padding-left: 0;
