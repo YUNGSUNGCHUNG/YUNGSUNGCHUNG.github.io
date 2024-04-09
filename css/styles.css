@@ -10867,21 +10867,10 @@ p.lead {
   font-size: 1.5rem;
 }
 
-#sideNav {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: white;
-  background-image:url(assets/img/你的名字.png);
-  background-repeat:no-repeat;
-  background-size:cover;
-}
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-}
-#sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
 }
 
 @media (min-width: 992px) {
