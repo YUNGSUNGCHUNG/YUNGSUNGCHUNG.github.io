@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     background-color: cornflowerblue;
     color: white;
 }
-.topbg{
-    padding-left: 1rem;
+.sideNav
+{
     padding-right: 1rem;
     background-color: black;
     background-image:url(assets/img/你的名字.png);
