@@ -26,9 +26,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     background-color: cornflowerblue;
     color: white;
 }
-.petertable{
-    width: 40%;
-    background-color: cornflowerblue;
+.table table-striped petertable{
+    width: 20%;
+    background-color: RED;
     }
 .petertable th{
     text-align: center; 
