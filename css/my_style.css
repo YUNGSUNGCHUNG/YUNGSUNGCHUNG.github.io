@@ -28,11 +28,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 .petertable{
     width: 20%;
-    background-color: RED;
+    background-color: cornflowerblue;
     }
 .petertable th{
     text-align: center; 
+    background-color: aquamarine;
 }
 .petertable td{
-    text-align: center;     
+    text-align: center;  
+    background-color: slategrey;   
 }
