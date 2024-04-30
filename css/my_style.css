@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 .petertable{
     table-layout: auto;
-    width: 100%;
+    width: 90%;
     background-color: cornflowerblue;
     margin:auto;
     }
@@ -40,17 +40,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .petertable td{
     text-align: center;  
     background-color: darkseagreen;
-    border:none;   
+    border:none;  
 }
 .carousel {
-    border:5px orange solid;
-    padding:10px;
-    width:200px;
+    border:10px orange solid;
+    padding:5px red;
+    width:300px;    
     margin: 15px;
     }
   .tenor-gif-embed{
-    border: 5px greenyellow solid;
-    padding:10PX;   
+    border: 20px greenyellow solid;
+    padding: 50px red ;   
     width:60px;
     margin:auto;
   }
+.list-group{
+    padding: 20PX;
+}
