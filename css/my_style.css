@@ -23,21 +23,34 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     color: forestgreen;
 }
 .ec_icon:hover{
-    background-color: cornflowerblue;
+    background-color: cornflowerblue;   
     color: white;
 }
 .petertable{
     table-layout: auto;
-    width: 50%;
+    width: 100%;
     background-color: cornflowerblue;
+    margin:auto;
     }
 .petertable th{
     text-align: center; 
     background-color: aquamarine;
-    border: 1px solid#2a5d44;
+    border: none;
 }
 .petertable td{
     text-align: center;  
     background-color: darkseagreen;
-    border: 1px solid#2a5d44;   
+    border:none;   
 }
+.carousel {
+    border:5px orange solid;
+    padding:10px;
+    width:200px;
+    margin: 15px;
+    }
+  .tenor-gif-embed{
+    border: 5px greenyellow solid;
+    padding:10PX;   
+    width:60px;
+    margin:auto;
+  }
