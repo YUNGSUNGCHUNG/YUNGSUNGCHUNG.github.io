@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: "Noto Serif TC", serif;
     }
 .ec_icon{
-    color: forestgreen;
+    color: chartreuse;
 }
 .ec_icon:hover{
     background-color: cornflowerblue;   
@@ -34,12 +34,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     }
 .petertable th{
     text-align: center; 
-    background-color: aquamarine;
+    background-color: greenyellow;
     border: none;
 }
 .petertable td{
     text-align: center;  
-    background-color: darkseagreen;
+    background-color: cadetblue;
     border:none;  
 }
 .carousel {
