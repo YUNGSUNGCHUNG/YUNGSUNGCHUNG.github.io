@@ -824,7 +824,7 @@ ul.dropdown-menu li {
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0;
+  padding: 150px 0;
   position: relative;
 }
 @media (max-width: 992px) {
