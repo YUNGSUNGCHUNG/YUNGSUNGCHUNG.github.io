@@ -2760,3 +2760,17 @@ body{margin-top:20px;}
     left: 0;
     right: -55.8px;
 }
+.news{
+  color: white;
+}
+.news:hover{
+  background-color: cornflowerblue;   
+  color: white;
+}
+.text-muted{
+color: white;
+}
+.text-muted:hover{
+  background-color: cornflowerblue;   
+  color: red;
+}
