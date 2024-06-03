@@ -140,74 +140,91 @@ $(document).ready(function () {
 	});
 
 });
-(function ($) {
-	$(function () {
-  
-  
-	  $(window).on('scroll', function () {
-		fnOnScroll();
-	  });
-  
-	  $(window).on('resize', function () {
-		fnOnResize();
-	  });
-  
-  
-	  var agTimeline = $('.js-timeline'),
-		agTimelineLine = $('.js-timeline_line'),
-		agTimelineLineProgress = $('.js-timeline_line-progress'),
-		agTimelinePoint = $('.js-timeline-card_point-box'),
-		agTimelineItem = $('.js-timeline_item'),
-		agOuterHeight = $(window).outerHeight(),
-		agHeight = $(window).height(),
-		f = -1,
-		agFlag = false;
-  
-	  function fnOnScroll() {
-		agPosY = $(window).scrollTop();
-  
-		fnUpdateFrame();
-	  }
-  
-	  function fnOnResize() {
-		agPosY = $(window).scrollTop();
-		agHeight = $(window).height();
-  
-		fnUpdateFrame();
-	  }
-  
-	  function fnUpdateWindow() {
-		agFlag = false;
-  
-		agTimelineLine.css({
-		  top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
-		  bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+	(function ($) {
+		$(function () {
+	
+	
+		$(window).on('scroll', function () {
+			fnOnScroll();
 		});
-  
-		f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
-	  }
-  
-	  function fnUpdateProgress() {
-		var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
-  
-		i = agTop + agPosY - $(window).scrollTop();
-		a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
-		n = agPosY - a + agOuterHeight / 2;
-		i <= agPosY + agOuterHeight / 2 && (n = i - a);
-		agTimelineLineProgress.css({height: n + "px"});
-  
-		agTimelineItem.each(function () {
-		  var agTop = $(this).find(agTimelinePoint).offset().top;
-  
-		  (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
-		})
-	  }
-  
-	  function fnUpdateFrame() {
-		agFlag || requestAnimationFrame(fnUpdateWindow);
-		agFlag = true;
-	  }
-  
-  
-	});
-  })(jQuery);
+	
+		$(window).on('resize', function () {
+			fnOnResize();
+		});
+	
+	
+		var agTimeline = $('.js-timeline'),
+			agTimelineLine = $('.js-timeline_line'),
+			agTimelineLineProgress = $('.js-timeline_line-progress'),
+			agTimelinePoint = $('.js-timeline-card_point-box'),
+			agTimelineItem = $('.js-timeline_item'),
+			agOuterHeight = $(window).outerHeight(),
+			agHeight = $(window).height(),
+			f = -1,
+			agFlag = false;
+	
+		function fnOnScroll() {
+			agPosY = $(window).scrollTop();
+	
+			fnUpdateFrame();
+		}
+	
+		function fnOnResize() {
+			agPosY = $(window).scrollTop();
+			agHeight = $(window).height();
+	
+			fnUpdateFrame();
+		}
+	
+		function fnUpdateWindow() {
+			agFlag = false;
+	
+			agTimelineLine.css({
+			top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
+			bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+			});
+	
+			f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+		}
+	
+		function fnUpdateProgress() {
+			var agTop = agTimelineItem.last().find(agTimelinePoint).offset().top;
+	
+			i = agTop + agPosY - $(window).scrollTop();
+			a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+			n = agPosY - a + agOuterHeight / 2;
+			i <= agPosY + agOuterHeight / 2 && (n = i - a);
+			agTimelineLineProgress.css({height: n + "px"});
+	
+			agTimelineItem.each(function () {
+			var agTop = $(this).find(agTimelinePoint).offset().top;
+	
+			(agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
+			})
+		}
+	
+		function fnUpdateFrame() {
+			agFlag || requestAnimationFrame(fnUpdateWindow);
+			agFlag = true;
+		}
+	
+	
+		});
+	})(jQuery);
+	
+	var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 10,
+    delay: (el, i) => 45 * i
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 5,
+  });
